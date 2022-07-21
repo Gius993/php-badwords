@@ -11,8 +11,10 @@
 		//creo una variabile
 		$myTest = ("ciao sono un test su php per un test");		
 		//stampo la variabile
+		$badWord = $_GET['test'];
 	?>	
-	<h1> <?php echo $myTest;
+	<h1> 
+		<?php echo $myTest;
 				
 	?>
 	</h1>
@@ -29,7 +31,7 @@
 	<h1>
 		<?php
 			//censuro la parola test
-		 echo str_replace('test', '***', $myTest);
+		 echo str_replace($badWord, '***', $myTest);
 		?>
 	</h1>
 
@@ -37,7 +39,7 @@
 		la tua stringa è
 		<?php 
 		// lunghezza parola censurata
-		echo strlen(str_replace('test', '***', $myTest));
+		echo strlen(str_replace($badWord, '***', $myTest));
 		?>
 		caratteri
 	</div>
