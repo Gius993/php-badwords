@@ -9,13 +9,11 @@
 <body>
 	<?php
 		//creo una variabile
-		$myTest = ("ciao sono un test su php");
-		
+		$myTest = ("ciao sono un test su php per un test");		
 		//stampo la variabile
-	?>
-	
+	?>	
 	<h1> <?php echo $myTest;
-			
+				
 	?>
 	</h1>
 
@@ -26,6 +24,20 @@
 		echo  strlen($myTest);
 		?>
 		caratteri
+	</div>
+
+	<h1>
+		<?php
+			//censuro la parola test
+		 echo str_replace('test', '***', $myTest);
+		?>
+	</h1>
+
+	<div>
+		<?php 
+		// lunghezza parola censurata
+		echo strlen(str_replace('test', '***', $myTest));
+		?>
 	</div>
 </body>
 </html>
