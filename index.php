@@ -34,10 +34,12 @@
 	</h1>
 
 	<div>
+		la tua stringa è
 		<?php 
 		// lunghezza parola censurata
 		echo strlen(str_replace('test', '***', $myTest));
 		?>
+		caratteri
 	</div>
 </body>
 </html>
